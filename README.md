@@ -162,20 +162,6 @@ Check user's answer
 
 ## 📸 Screenshots
 
-Include screenshots in your submission document showing:
-- Home page
-- Quiz in progress
-- Correct/incorrect answer feedback
-- Results screen
-- Terms browser
-
-## 🎥 Demo Video
-
-Record a screen recording showing:
-1. Starting the application
-2. Playing the quiz
-3. Viewing all terms
-4. Score tracking
 
 ## 🏗️ Build for Production
 
@@ -186,23 +172,9 @@ npm run build
 ```
 
 ### Backend
-Use gunicorn or uvicorn with workers:
+Use uvicorn with workers:
 ```bash
 uvicorn main:app --host 0.0.0.0 --port 8000 --workers 4
-```
-
-## 🧪 Testing
-
-### Test Backend API
-```bash
-# Test health check
-curl http://localhost:8000/
-
-# Test get all terms
-curl http://localhost:8000/api/terms
-
-# Test quiz endpoint
-curl http://localhost:8000/api/quiz/random?count=5
 ```
 
 ### Sample API Requests/Responses
@@ -219,32 +191,4 @@ curl -X POST http://localhost:8000/api/quiz/check \
   -d '{"term_id": 1, "user_answer": "API"}'
 ```
 
-## 🎓 Learning Outcomes
-
-By building this project, you'll gain experience with:
-- Full-stack application architecture
-- REST API design and implementation
-- React component-based development
-- State management in React
-- CORS configuration
-- Frontend-backend integration
-- Responsive UI design
-
-## 📝 Notes
-
-- Backend runs on port 8000
-- Frontend runs on port 5173
-- CORS is configured for local development
-- Data is stored in JSON file (can be extended to use database)
-
-## 🤝 Contributing
-
-Feel free to add more terms to `backend/data/terms.json` to expand the vocabulary!
-
-## 📄 License
-
-This project is created for educational purposes.
-
----
-
-Built with ❤️ for tech learners everywhere!
+By Team3
