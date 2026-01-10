@@ -162,6 +162,8 @@ Check user's answer
 
 ## 📸 Screenshots
 
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/8ed97889-c828-45ce-880c-74b6699ea2e0" />
+
 
 ## 🏗️ Build for Production
 
