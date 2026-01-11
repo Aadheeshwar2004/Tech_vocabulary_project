@@ -55,12 +55,24 @@ It includes **user authentication**, **score tracking**, and an **admin panel** 
 tech-vocabulary-builder/
 │
 ├── backend/
+│   ├── data/
 │   ├── routers/
 │   │   ├── __init__.py
 │   │   ├── admin.py
 │   │   ├── auth.py
 │   │   ├── quiz.py
 │   │   └── user.py
+│   │
+│   ├── tests/
+│   │   ├── __init__.py
+│   │   ├── conftest.py
+│   │   ├── python_view_test_results.py
+│   │   ├── test_admin.py
+│   │   ├── test_auth.py
+│   │   ├── test_quiz.py
+│   │   ├── test_user.py
+│   │   └── test_results.db
+│   │
 │   ├── auth_utils.py
 │   ├── database.py
 │   ├── models.py
@@ -83,9 +95,11 @@ tech-vocabulary-builder/
 │   │   ├── App.css
 │   │   ├── index.css
 │   │   └── main.jsx
+│   │
 │   ├── index.html
 │   ├── package.json
-│   └── vite.config.js
+│   ├── vite.config.js
+│   └── eslint.config.js
 │
 ├── venv/
 ├── README.md
